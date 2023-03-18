@@ -10,6 +10,12 @@ function DestroyGui()
 
 end
 
+function ERH()
+
+    loadstring(Game:HttpGet("https://raw.githubusercontent.com/0n1kidd/0n1-Hub-V2/main/Escape%20Running%20Head"))()
+
+end
+
 function BBS()
 
     loadstring(Game:HttpGet("https://raw.githubusercontent.com/0n1kidd/0n1-Hub-V2/main/Broken%20Bones%20IV"))()
@@ -197,6 +203,30 @@ tab1:AddButton({
         wait(1.5)
 
         ESJO()
+
+	end    
+
+})
+
+tab1:AddButton({
+
+	Name = "Escape Running Head",	Callback = function()
+
+            OrionLib:MakeNotification({
+
+	        Name = "Game Chosen!",
+
+	        Content = "You've chosen Escape Running Head!",
+
+	        Image = "",
+
+	        Time = 1.5
+
+            })
+
+        wait(1.5)
+
+        ERH()
 
 	end    
 
