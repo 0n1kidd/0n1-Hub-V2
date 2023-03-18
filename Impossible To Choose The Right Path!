@@ -1,0 +1,567 @@
+-- Booting Library
+
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+
+-- Functions
+
+function DestroyGui()
+
+    OrionLib:Destroy()
+
+end
+
+-- Creating Window
+
+local Window = OrionLib:MakeWindow({Name = "0n1 Hub V2 • Impossible To Choose The Right Path!", HidePremium = false, IntroEnabled = false})
+
+-- Creating Tabs
+
+local tab1 = Window:MakeTab({
+
+	Name = "Main",	Icon = "",
+
+	PremiumOnly = false
+
+})
+
+local tab3 = Window:MakeTab({
+
+	Name = "Player",
+
+	Icon = "",
+
+	PremiumOnly = false
+
+})
+
+local tab4 = Window:MakeTab({
+
+	Name = "More",
+
+	Icon = "",
+
+	PremiumOnly = false
+
+})
+
+-- Config Tab1
+
+local Section1 = tab1:AddSection({
+
+	Name = "Auto Farm"
+
+})
+
+tab1:AddButton({
+
+	Name = "Unlock All Stages",
+
+	Callback = function()
+
+      	wait(0.3)
+
+game.Players.LocalPlayer.Character:MoveTo(Vector3.new(0,4-45))
+
+wait(0.3)
+
+game.Players.LocalPlayer.Character:MoveTo(Vector3.new(0,4,-118))
+
+wait(0.3)
+
+game.Players.LocalPlayer.Character:MoveTo(Vector3.new(0,4,-216))
+
+wait(0.3)
+
+game.Players.LocalPlayer.Character:MoveTo(Vector3.new(0,4,-335))
+
+wait(0.3)
+
+game.Players.LocalPlayer.Character:MoveTo(Vector3.new(0,4,-478))
+
+wait(0.3)
+
+game.Players.LocalPlayer.Character:MoveTo(Vector3.new(0,4,-644))
+
+wait(0.3)
+
+game.Players.LocalPlayer.Character:MoveTo(Vector3.new(0,4,-835))
+
+wait(0.3)
+
+game.Players.LocalPlayer.Character:MoveTo(Vector3.new(0,4,-1045))
+
+wait(0.3)
+
+game.Players.LocalPlayer.Character:MoveTo(Vector3.new(0,4,-1282))
+
+wait(0.3)
+
+game.Players.LocalPlayer.Character:MoveTo(Vector3.new(0,4,-1538))
+
+wait(0.3)
+
+game.Players.LocalPlayer.Character:MoveTo(Vector3.new(0,4,-1819))
+
+wait(0.3)
+
+game.Players.LocalPlayer.Character:MoveTo(Vector3.new(0,4,-2123))
+
+wait(0.3)
+
+game.Players.LocalPlayer.Character:MoveTo(Vector3.new(0,4,-2450))
+
+wait(0.3)
+
+game.Players.LocalPlayer.Character:MoveTo(Vector3.new(0,4,-2800))
+
+wait(0.3)
+
+game.Players.LocalPlayer.Character:MoveTo(Vector3.new(0,4,-3173))	
+
+  	end    
+
+})
+
+local Section1 = tab1:AddSection({
+
+	Name = "Place Teleports"
+
+})
+
+tab1:AddButton({
+
+	Name = "Inside The Trofee",
+
+	Callback = function()
+
+      		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(0,30,-3271))
+
+  	end    
+
+})
+
+tab1:AddButton({
+
+	Name = "At The Items",
+
+	Callback = function()
+
+      		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-52,4,-3226))
+
+  	end    
+
+})
+
+tab1:AddButton({
+
+	Name = "At The Body Paint",
+
+	Callback = function()
+
+      		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(56,4,-3252))
+
+  	end    
+
+})
+
+tab1:AddButton({
+
+	Name = "At The Speed Changers",
+
+	Callback = function()
+
+      		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(52,4,-3214))
+
+  	end    
+
+})
+
+local Section1 = tab1:AddSection({
+
+	Name = "Stage Teleports"
+
+})
+
+tab1:AddButton({
+
+	Name = "Stage 1",
+
+	Callback = function()
+
+      		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(0,4-45))
+
+  	end    
+
+})
+
+tab1:AddButton({
+
+	Name = "Stage 2",
+
+	Callback = function()
+
+      		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(0,4,-118))
+
+  	end    
+
+})
+
+tab1:AddButton({
+
+	Name = "Stage 3",
+
+	Callback = function()
+
+      		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(0,4,-216))
+
+  	end    
+
+})
+
+tab1:AddButton({
+
+	Name = "Stage 4",
+
+	Callback = function()
+
+      		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(0,4,-335))
+
+  	end    
+
+})
+
+tab1:AddButton({
+
+	Name = "Stage 5",
+
+	Callback = function()
+
+      		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(0,4,-478))
+
+  	end    
+
+})
+
+tab1:AddButton({
+
+	Name = "Stage 6",
+
+	Callback = function()
+
+      		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(0,4,-644))
+
+  	end    
+
+})
+
+tab1:AddButton({
+
+	Name = "Stage 7",
+
+	Callback = function()
+
+      		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(0,4,-835))
+
+  	end    
+
+})
+
+tab1:AddButton({
+
+	Name = "Stage 8",
+
+	Callback = function()
+
+      		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(0,4,-1045))
+
+  	end    
+
+})
+
+tab1:AddButton({
+
+	Name = "Stage 9",
+
+	Callback = function()
+
+      		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(0,4,-1282))
+
+  	end    
+
+})
+
+tab1:AddButton({
+
+	Name = "Stage 10",
+
+	Callback = function()
+
+      		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(0,4,-1538))
+
+  	end    
+
+})
+
+tab1:AddButton({
+
+	Name = "Stage 11",
+
+	Callback = function()
+
+      	game.Players.LocalPlayer.Character:MoveTo(Vector3.new(0,4,-1819))	
+
+  	end    
+
+})
+
+tab1:AddButton({
+
+	Name = "Stage 12",
+
+	Callback = function()
+
+      	game.Players.LocalPlayer.Character:MoveTo(Vector3.new(0,4,-2123))	
+
+  	end    
+
+})
+
+tab1:AddButton({
+
+	Name = "Stage 13",
+
+	Callback = function()
+
+      	game.Players.LocalPlayer.Character:MoveTo(Vector3.new(0,4,-2450))	
+
+  	end    
+
+})
+
+tab1:AddButton({
+
+	Name = "Stage 14",
+
+	Callback = function()
+
+      	game.Players.LocalPlayer.Character:MoveTo(Vector3.new(0,4,-2800))	
+
+  	end    
+
+})
+
+tab1:AddButton({
+
+	Name = "Stage 15",
+
+	Callback = function()
+
+      	game.Players.LocalPlayer.Character:MoveTo(Vector3.new(0,4,-3173))	
+
+  	end    
+
+})
+
+-- Config Tab3
+
+local section1 = tab3:AddSection({
+
+	Name = "Settings"
+
+})
+
+tab3:AddTextbox({
+
+	Name = "Walk Speed",
+
+	Default = "",
+
+	TextDisappear = false,
+
+	Callback = function(pws)
+
+		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = pws
+
+	end	  
+
+})
+
+tab3:AddTextbox({
+
+	Name = "Jump Power",
+
+	Default = "",
+
+	TextDisappear = false,
+
+	Callback = function(pjp)
+
+		game.Players.LocalPlayer.Character.Humanoid.JumpPower = pjp
+
+	end	  
+
+})
+
+tab3:AddTextbox({
+
+	Name = "Hip Height",
+
+	Default = "",
+
+	TextDisappear = false,
+
+	Callback = function(phh)
+
+		game.Players.LocalPlayer.Character.Humanoid.HipHeight = phh
+
+	end	  
+
+})
+
+tab3:AddButton({
+
+	Name = "Low Graphics",
+
+	Callback = function()
+
+         _G.Settings = {
+
+            Players = {
+
+                ["Ignore Me"] = true, -- Ignore your Character
+
+                ["Ignore Others"] = true -- Ignore other Characters
+
+            },
+
+            Meshes = {
+
+            Destroy = false,
+
+            LowDetail = true
+
+        },
+
+        Images = {
+
+            Invisible = true,
+
+            LowDetail = false,
+
+            Destroy = false,
+
+        },
+
+        ["No Particles"] = true, -- Disables all ParticleEmitter, Trail, Smoke, Fire and Sparkles
+
+        ["No Camera Effects"] = true, -- Disables all PostEffect's (Camera/Lighting Effects)
+
+        ["No Explosions"] = true, -- Makes Explosion's invisible
+
+        ["No Clothes"] = true, -- Removes Clothing from the game
+
+        ["Low Water Graphics"] = true, -- Removes Water Quality
+
+        ["No Shadows"] = true, -- Remove Shadows
+
+        ["Low Rendering"] = true, -- Lower Rendering
+
+        ["Low Quality Parts"] = true -- Lower quality parts
+
+    }
+
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/CasperFlyModz/discord.gg-rips/main/FPSBooster.lua"))()	
+
+	end    
+
+})
+
+tab3:AddButton({
+
+	Name = "Anti Kick",
+
+	Callback = function()
+
+         local vu = game:GetService("VirtualUser")
+
+            game:GetService("Players").LocalPlayer.Idled:connect(function()
+
+                    vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+
+                    wait(1)
+
+                vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+
+            end)	
+
+	end    
+
+})
+
+-- Config Tab4
+
+local Section1 = tab4:AddSection({
+
+	Name = "Discord"
+
+})
+
+tab4:AddButton({
+
+	Name = "Copy Discord Invite",
+
+	Callback = function()
+
+	    setclipboard("discord.gg/UnjnNVx6Tp")
+
+        OrionLib:MakeNotification({
+
+        Name = "Copied Invite!",
+
+        Content = "Join the Discord by using this invite!!",
+
+        Image = "",
+
+        Time = 1.5
+
+        })
+
+	end    
+
+})
+
+local Section1 = tab4:AddSection({
+
+	Name = "Credits"
+
+})
+
+tab4:AddLabel("0n1kidd#0676")
+
+tab4:AddLabel("MainChat#5720")
+
+tab4:AddLabel("TestAccount#1287")
+
+local Section1 = tab4:AddSection({
+
+	Name = "GUI"
+
+})
+
+tab4:AddButton({
+
+	Name = "Destroy GUI",
+
+	Callback = function()
+
+	    wait(0.5)
+
+	    DestroyGui()
+
+	end    
+
+})
+
+-- Script End
+
+OrionLib:Init()
