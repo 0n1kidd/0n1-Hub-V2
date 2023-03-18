@@ -1,0 +1,385 @@
+-- Booting Library
+
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+
+-- Functions
+
+function DestroyGui()
+
+    OrionLib:Destroy()
+
+end
+
+-- Creating Window
+
+local Window = OrionLib:MakeWindow({Name = "0n1 Hub V2 • Natural Disaster Survival", HidePremium = false, IntroEnabled = false})
+
+-- Creating Tabs
+
+local tab1 = Window:MakeTab({
+
+	Name = "Main",	Icon = "",
+
+	PremiumOnly = false
+
+})
+
+local tab2 = Window:MakeTab({
+
+	Name = "Player",
+
+	Icon = "",
+
+	PremiumOnly = false
+
+})
+
+local tab3 = Window:MakeTab({
+
+	Name = "More",
+
+	Icon = "",
+
+	PremiumOnly = false
+
+})
+
+-- Config Tab1
+
+local Section1 = tab1:AddSection({
+
+	Name = "Main Stuff"
+
+})
+
+tab1:AddToggle({
+
+	Name = "Auto Farm Wins",
+
+	Default = false,
+
+	Callback = function(state)
+
+   	if state then
+
+           _G.loop = true
+
+           while _G.loop == true do wait()
+
+                 wait(0.1)
+
+                 game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-295,180,336))
+
+           end
+
+        else
+
+           _G.loop = false
+
+        end
+
+	end    
+
+})
+
+tab1:AddButton({
+
+	Name = "Teleport To Lobby",
+
+	Callback = function()
+
+	    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-247,180,306))
+
+	end    
+
+})
+
+tab1:AddButton({
+
+	Name = "Teleport To Island",
+
+	Callback = function()
+
+	    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-134,47,7))
+
+	end    
+
+})
+
+local Section1 = tab1:AddSection({
+
+	Name = "Extra Stuff"
+
+})
+
+tab1:AddButton({
+
+	Name = "Show Disaster In Chat",
+
+	Callback = function()
+
+	    game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(game.Players.LocalPlayer.Character.SurvivalTag.Value, "All")
+
+	end    
+
+})
+
+tab1:AddButton({
+
+	Name = "Remove Sand Storm Blur",
+
+	Callback = function()
+
+	    game.Players.LocalPlayer.PlayerGui.SandStormGui:destroy()
+
+	end    
+
+})
+
+tab1:AddButton({
+
+	Name = "Remove Snow Storm Blur",
+
+	Callback = function()
+
+	    game.Players.LocalPlayer.PlayerGui.BlizzardGui:destroy()
+
+	end    
+
+})
+
+tab1:AddButton({
+
+	Name = "Stand On Island Rocks",
+
+	Callback = function()
+
+	    for i, v in pairs (game.workspace:GetDescendants())do
+
+            if v.Name == 'LowerRocks' then
+
+                v.CanCollide = true
+
+                end
+
+        end
+
+	end    
+
+})
+
+tab1:AddButton({
+
+	Name = "Remove Fall Damage",
+
+	Callback = function()
+
+	    game.Players.LocalPlayer.Character.FallDamageScript:Destroy()
+
+	end    
+
+})
+
+-- Config Tab2
+
+local section1 = tab2:AddSection({
+
+	Name = "Settings"
+
+})
+
+tab2:AddTextbox({
+
+	Name = "Walk Speed",
+
+	Default = "",
+
+	TextDisappear = false,
+
+	Callback = function(pws)
+
+		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = pws
+
+	end	  
+
+})
+
+tab2:AddTextbox({
+
+	Name = "Jump Power",
+
+	Default = "",
+
+	TextDisappear = false,
+
+	Callback = function(pjp)
+
+		game.Players.LocalPlayer.Character.Humanoid.JumpPower = pjp
+
+	end	  
+
+})
+
+tab2:AddTextbox({
+
+	Name = "Hip Height",
+
+	Default = "",
+
+	TextDisappear = false,
+
+	Callback = function(phh)
+
+		game.Players.LocalPlayer.Character.Humanoid.HipHeight = phh
+
+	end	  
+
+})
+
+tab2:AddButton({
+
+	Name = "Low Graphics",
+
+	Callback = function()
+
+         _G.Settings = {
+
+            Players = {
+
+                ["Ignore Me"] = true, -- Ignore your Character
+
+                ["Ignore Others"] = true -- Ignore other Characters
+
+            },
+
+            Meshes = {
+
+            Destroy = false,
+
+            LowDetail = true
+
+        },
+
+        Images = {
+
+            Invisible = true,
+
+            LowDetail = false,
+
+            Destroy = false,
+
+        },
+
+        ["No Particles"] = true, -- Disables all ParticleEmitter, Trail, Smoke, Fire and Sparkles
+
+        ["No Camera Effects"] = true, -- Disables all PostEffect's (Camera/Lighting Effects)
+
+        ["No Explosions"] = true, -- Makes Explosion's invisible
+
+        ["No Clothes"] = true, -- Removes Clothing from the game
+
+        ["Low Water Graphics"] = true, -- Removes Water Quality
+
+        ["No Shadows"] = true, -- Remove Shadows
+
+        ["Low Rendering"] = true, -- Lower Rendering
+
+        ["Low Quality Parts"] = true -- Lower quality parts
+
+    }
+
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/CasperFlyModz/discord.gg-rips/main/FPSBooster.lua"))()	
+
+	end    
+
+})
+
+tab2:AddButton({
+
+	Name = "Anti Kick",
+
+	Callback = function()
+
+         local vu = game:GetService("VirtualUser")
+
+            game:GetService("Players").LocalPlayer.Idled:connect(function()
+
+                    vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+
+                    wait(1)
+
+                vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+
+            end)	
+
+	end    
+
+})
+
+-- Config Tab3
+
+local Section1 = tab3:AddSection({
+
+	Name = "Discord"
+
+})
+
+tab3:AddButton({
+
+	Name = "Copy Discord Invite",
+
+	Callback = function()
+
+	    setclipboard("discord.gg/UnjnNVx6Tp")
+
+        OrionLib:MakeNotification({
+
+        Name = "Copied Invite!",
+
+        Content = "Join the Discord by using this invite!!",
+
+        Image = "",
+
+        Time = 1.5
+
+        })
+
+	end    
+
+})
+
+local Section1 = tab3:AddSection({
+
+	Name = "Credits"
+
+})
+
+tab3:AddLabel("0n1kidd#0676")
+
+tab3:AddLabel("MainChat#5720")
+
+tab3:AddLabel("TestAccount#1287")
+
+local Section1 = tab3:AddSection({
+
+	Name = "GUI"
+
+})
+
+tab3:AddButton({
+
+	Name = "Destroy GUI",
+
+	Callback = function()
+
+	    wait(0.5)
+
+	    DestroyGui()
+
+	end    
+
+})
+
+-- Script End
+
+OrionLib:Init()
