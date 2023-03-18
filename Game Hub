@@ -1,0 +1,273 @@
+-- Booting Library
+
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+
+-- Functions
+
+function DestroyGui()
+
+    OrionLib:Destroy()
+
+end
+
+function BBS()
+
+    loadstring(Game:HttpGet("https://raw.githubusercontent.com/0n1kidd/0n1-Hub-V2/main/Broken%20Bones%20IV"))()
+
+end
+
+function LOS()
+
+    loadstring(Game:HttpGet("https://raw.githubusercontent.com/0n1kidd/0n1-Hub-V2/main/Legends%20Of%20Speed"))()
+
+end
+
+function NDS()
+
+    loadstring(Game:HttpGet("https://raw.githubusercontent.com/0n1kidd/0n1-Hub-V2/main/Natural%20Disaster%20Survival"))()
+
+end
+
+function ITCTRP()
+
+    loadstring(Game:HttpGet("https://raw.githubusercontent.com/0n1kidd/0n1-Hub-V2/main/Impossible%20To%20Choose%20The%20Right%20Path!"))()
+
+end
+
+function ESJO()
+
+    loadstring(Game:HttpGet("https://raw.githubusercontent.com/0n1kidd/0n1-Hub-V2/main/Easy%20Stud%20Jumps%20Obby"))()
+
+end
+
+-- Creating Window
+
+local Window = OrionLib:MakeWindow({Name = "0n1 Hub V2 • Game Hub", HidePremium = false, IntroEnabled = false})
+
+-- Creating Tabs
+
+local tab1 = Window:MakeTab({
+
+	Name = "Games",	Icon = "",
+
+	PremiumOnly = false
+
+})
+
+local tab2 = Window:MakeTab({
+
+	Name = "More",
+
+	Icon = "",
+
+	PremiumOnly = false
+
+})
+
+-- Config Tab1
+
+local section1 = tab1:AddSection({
+
+	Name = "Choose Game"
+
+})
+
+tab1:AddButton({
+
+	Name = "Legends Of Speed",
+
+	Callback = function()
+
+            OrionLib:MakeNotification({
+
+	        Name = "Game Chosen!",
+
+	        Content = "You've chosen Legends Of Speed!",
+
+	        Image = "",
+
+	        Time = 1.5
+
+            })
+
+        wait(1.5)
+
+        LOS()
+
+	end    
+
+})
+
+tab1:AddButton({
+
+	Name = "Broken Bones IV",
+
+	Callback = function()
+
+            OrionLib:MakeNotification({
+
+	        Name = "Game Chosen!",
+
+	        Content = "You've chosen Broken Bones IV!",
+
+	        Image = "",
+
+	        Time = 1.5
+
+            })
+
+        wait(1.5)
+
+        BBS()
+
+	end    
+
+})
+
+tab1:AddButton({
+
+	Name = "Natural Disaster Survival",
+
+	Callback = function()
+
+            OrionLib:MakeNotification({
+
+	        Name = "Game Chosen!",
+
+	        Content = "You've chosen Natural Disaster Survival!",
+
+	        Image = "",
+
+	        Time = 1.5
+
+            })
+
+        wait(1.5)
+
+        NDS()
+
+	end    
+
+})
+
+tab1:AddButton({
+
+	Name = "Impossible To Choose The Right Path",
+
+	Callback = function()
+
+            OrionLib:MakeNotification({
+
+	        Name = "Game Chosen!",
+
+	        Content = "You've chosen Impossible To Choose The Right Path!",
+
+	        Image = "",
+
+	        Time = 1.5
+
+            })
+
+        wait(1.5)
+
+        ITCTRP()
+
+	end    
+
+})
+
+tab1:AddButton({
+
+	Name = "Easy Stud Jumps Obby",
+
+	Callback = function()
+
+            OrionLib:MakeNotification({
+
+	        Name = "Game Chosen!",
+
+	        Content = "You've chosen Easy Stud Jumps Obby!",
+
+	        Image = "",
+
+	        Time = 1.5
+
+            })
+
+        wait(1.5)
+
+        ESJO()
+
+	end    
+
+})
+
+-- Config Tab2
+
+local Section1 = tab2:AddSection({
+
+	Name = "Discord"
+
+})
+
+tab2:AddLabel("Get the key in the Discord!")
+
+tab2:AddButton({
+
+	Name = "Copy Discord Invite",
+
+	Callback = function()
+
+	    setclipboard("discord.gg/UnjnNVx6Tp")
+
+        OrionLib:MakeNotification({
+
+        Name = "Copied Invite!",
+
+        Content = "Join the Discord by using this invite!!",
+
+        Image = "",
+
+        Time = 1.5
+
+        })
+
+	end    
+
+})
+
+local Section1 = tab2:AddSection({
+
+	Name = "Credits"
+
+})
+
+tab2:AddLabel("0n1kidd#0676")
+
+tab2:AddLabel("MainChat#5720")
+
+tab2:AddLabel("TestAccount#1287")
+
+local Section1 = tab2:AddSection({
+
+	Name = "GUI"
+
+})
+
+tab2:AddButton({
+
+	Name = "Destroy GUI",
+
+	Callback = function()
+
+	    wait(0.5)
+
+	    DestroyGui()
+
+	end    
+
+})
+
+-- Script End
+
+OrionLib:Init()
