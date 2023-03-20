@@ -240,8 +240,6 @@ local Section1 = tab2:AddSection({
 
 })
 
-tab2:AddLabel("Get the key in the Discord!")
-
 tab2:AddButton({
 
 	Name = "Copy Discord Invite",
